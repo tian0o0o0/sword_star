@@ -1,0 +1,61 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SFML Project",
+            "type": "shell",
+            "command": "${workspaceFolder}/library/SFML-3.0.2/compiler/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}/sword_star_main.cpp",
+                "-o",
+                "${workspaceFolder}/sword_star.exe",
+                "-I${workspaceFolder}/library/SFML-3.0.2/include",
+                "-L${workspaceFolder}/library/SFML-3.0.2/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-audio",
+                "-lsfml-network"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build using MinGW from SFML folder"
+        },
+        {
+            "label": "Build SFML Project (Debug)",
+            "type": "shell",
+            "command": "${workspaceFolder}/library/SFML-3.0.2/compiler/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}/sword_star_main.cpp",
+                "-o",
+                "${workspaceFolder}/sword_star.exe",
+                "-I${workspaceFolder}/library/SFML-3.0.2/include",
+                "-L${workspaceFolder}/library/SFML-3.0.2/lib",
+                "-lsfml-graphics-d",
+                "-lsfml-window-d",
+                "-lsfml-system-d",
+                "-lsfml-audio-d",
+                "-lsfml-network-d"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Build debug version using MinGW from SFML folder"
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "${workspaceFolder}/sword_star.exe",
+            "dependsOn": "Build SFML Project",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
