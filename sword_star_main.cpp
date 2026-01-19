@@ -1,6 +1,8 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
  
+//& "c:\Users\User\sword_star\library\SFML-3.0.2\compiler\mingw64\bin\g++.exe" -g "c:\Users\User\sword_star\sword_star_main.cpp" -o "c:\Users\User\sword_star\sword_star_main.exe" -I"c:\Users\User\sword_star\library\SFML-3.0.2\include" -L"c:\Users\User\sword_star\library\SFML-3.0.2\lib" -lsfml-graphics -lsfml-window -lsfml-audio -lsfml-system; $env:PATH = "c:\Users\User\sword_star\library\SFML-3.0.2\bin;$env:PATH"; & "c:\Users\User\sword_star\sword_star_main.exe"
+
 int main()
 {
     // Create the main window
