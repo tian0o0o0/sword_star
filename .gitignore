@@ -1,0 +1,5 @@
+# Ignore all .exe files
+*.exe
+
+# But allow .exe files in the library folder
+!library/**/*.exe
