@@ -1,5 +1,6 @@
 
 #include <iostream>
-void main(){
+int main(){
     std::cout<<"hi";
+    return 0;
 }
