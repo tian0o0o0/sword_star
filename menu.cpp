@@ -11,5 +11,6 @@ void menu::initiate_background(){
     background_process();
 }
 void menu::background_process(){
+    
 }
 

@@ -1,6 +1,6 @@
 #include<SFML/Graphics.hpp>
 #include<iostream>
-
+#include"menu.hpp"
 int main()
 {
     sf::RenderWindow screen(sf::VideoMode::getDesktopMode(),"Sword star");
