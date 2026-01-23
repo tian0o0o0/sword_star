@@ -1,10 +1,16 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+#include<SFML/Graphics.hpp>
+
 class menu{
+
     public:
     menu();
-    void initiate_background();
-    void background_process();
+    sf::Sprite background;
+    void make_texture();
+    sf::Sprite& send_sprite();
+
     private:
-    sf::Texture bg;
+    sf::Texture texture;
+
+
 };

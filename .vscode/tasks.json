@@ -8,6 +8,9 @@
             "args": [
                 "-g",
                 "${workspaceFolder}/sword_star_main.cpp",
+                "${workspaceFolder}/menu.cpp",
+                "${workspaceFolder}/Lplayer.cpp",
+                "${workspaceFolder}/Rplayer.cpp",
                 "-o",
                 "${workspaceFolder}/sword_star.exe",
                 "-I${workspaceFolder}/library/SFML-3.0.2/include",
@@ -32,6 +35,9 @@
             "args": [
                 "-g",
                 "${workspaceFolder}/sword_star_main.cpp",
+                "${workspaceFolder}/menu.cpp",
+                "${workspaceFolder}/Lplayer.cpp",
+                "${workspaceFolder}/Rplayer.cpp",
                 "-o",
                 "${workspaceFolder}/sword_star.exe",
                 "-I${workspaceFolder}/library/SFML-3.0.2/include",
